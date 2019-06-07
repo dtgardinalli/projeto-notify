@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+nav{
+    border-top: #4CAF50 20px solid;
+    background-image: url(img/banner.png);
+    height: 60vh;
+    display: flex;
+    justify-content: center
+}
+nav div{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    background-color: blue;
+}
+nav img{
+    height: 400px;
+}
