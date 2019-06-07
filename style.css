@@ -6,14 +6,34 @@ nav{
     background-image: url(img/banner.png);
     height: 60vh;
     display: flex;
-    justify-content: center
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 nav div{
     display: flex;
     justify-content: center;
     height: 60vh;
-    background-color: blue;
+    align-items: flex-end;
+    width: 50%;
 }
 nav img{
-    height: 400px;
+    height: 300px;
 }
+
+nav .p1{
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: center;
+    color: white;
+    font-size: 22pt;
+}
+
+span{
+    color: #4CAF50;
+}
+
+nav p{
+    color: white;
+}  
