@@ -1,39 +1,91 @@
-body{
+/*geral*/
+p, h1, a {
     margin: 0;
-}
-nav{
-    border-top: #4CAF50 20px solid;
-    background-image: url(img/banner.png);
-    height: 60vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-nav div{
-    display: flex;
-    justify-content: center;
-    height: 60vh;
-    align-items: flex-end;
-    width: 50%;
-}
-nav img{
-    height: 300px;
+    padding: 0;
+    text-decoration: none;
 }
 
-nav .p1{
-    font-family: 'Pacifico', cursive;
+img{
+    display: block;
+}
+
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: "header" "section" "contact" "aside" "footer";
+    grid-template-rows: 550px 40vh 40vh 30vh 10vh;
+}
+
+/*HEADER*/
+
+header{
+    grid-area: header;
+    border-top: #4CAF50 20px solid;
+    background-image: url(img/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin: center;
+}
+
+header .hand{
+    align-self: flex-end;
+}
+
+header .hand img{
+    height: 430px;
+}
+
+header .p1{
+    width: 27%;
+    justify-self: self-start;
+}
+
+header .p1 h1{
+    font-family: 'Pacifico', cursive;
     color: white;
-    font-size: 22pt;
+    font-size: 35pt;
+    font-weight: normal;
+    margin-bottom: 40px;
 }
 
 span{
     color: #4CAF50;
 }
 
-nav p{
+header .p1 .txt{
     color: white;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 14pt;
 }  
+
+/*SECTION*/
+
+section{
+    grid-area: section;
+    background-color: blue;
+}
+
+/*CONTACT*/
+
+.contact{
+    grid-area: contact;
+    background-color: limegreen;
+}
+
+/*ASIDE*/
+
+aside{
+    grid-area: aside;
+    background-color: blueviolet;
+}
+
+/*FOOTER*/
+
+footer{
+    grid-area: footer;
+    background-color: red;
+}
