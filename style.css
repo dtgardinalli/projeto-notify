@@ -1,10 +1,13 @@
 /*geral*/
-p, h1, a {
+p, h1, h2, a {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
+input, button{
+    outline: 0;
+}
 img{
     display: block;
 }
@@ -13,7 +16,7 @@ body{
     margin: 0;
     display: grid;
     grid-template-areas: "header" "section" "contact" "aside" "footer";
-    grid-template-rows: 550px 40vh 40vh 30vh 10vh;
+    grid-template-rows: 550px 40vh 50vh 50vh 10vh;
 }
 
 /*HEADER*/
@@ -114,13 +117,80 @@ section div p{
     color: gray;
 }
 
-
 /*CONTACT*/
 
 .contact{
     grid-area: contact;
-    background-color: limegreen;
+    background-color:  #e3e3e3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.contact .box{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.contact .box div{
+    width: 40%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact .box div p{
+    color: gray;
+    margin: 15px 0;
+    line-height: 25px;
+}
+
+.contact .box div input{
+    padding: 15px 0 15px 20px;
+    border: 1px solid gray;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.contact .box div button{
+    padding: 16px 20px;
+    background-color: #4CAF50;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-left: -5px;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .3s ease-in-out ;
+}
+
+.contact .box div button:hover{
+    background-color: rgb(52, 136, 55);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*ASIDE*/
 
