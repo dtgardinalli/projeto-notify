@@ -257,38 +257,26 @@ aside .social li:hover{
     background: #4CAF50;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*FOOTER*/
 
 footer{
     grid-area: footer;
-    background-color: red;
+    background-color: #e3e3e3;
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer li{
+    margin: 0 20px;
+}
+
+footer a{
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    transition: color .3s ease-in-out ;
+}
+
+footer a:hover{
+    color: #4CAF50;
 }
