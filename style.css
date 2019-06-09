@@ -88,17 +88,32 @@ header .p1 .box a:hover{
     background: #4CAF50;
 }
 
-
-
-
-
-
 /*SECTION*/
 
 section{
     grid-area: section;
-    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+section div {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+section div img{
+    background-color: #4CAF50;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+section div p{
+    color: gray;
+}
+
 
 /*CONTACT*/
 
