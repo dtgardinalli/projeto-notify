@@ -24,6 +24,7 @@ header{
     background-image: url(img/banner.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -48,6 +49,7 @@ header .p1 h1{
     font-size: 35pt;
     font-weight: normal;
     margin-bottom: 40px;
+    
 }
 
 span{
@@ -61,6 +63,35 @@ header .p1 .txt{
     align-items: center;
     font-size: 14pt;
 }  
+
+header .p1 .box{
+    display: flex;
+    justify-content: flex-start;
+}
+
+header .p1 .box a{
+    height: 40px;
+    width: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: background .3s ease-in-out ;
+    margin: 15px 15px 0 0 ;
+}
+
+header .p1 .box img{
+    height: 20px;
+    width: 20px;
+    padding: 10px 10px;
+}
+
+header .p1 .box a:hover{
+    background: #4CAF50;
+}
+
+
+
+
+
 
 /*SECTION*/
 
